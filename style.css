@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f3f6;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.container{
+    width: 75%;
+    height: 80%;
+    display: flex;
+    padding: 0.1em 0em;
+}
+.logo{
+    height: 100%;
+    width: 10%;
+}
+.logo .img1{
+   height: 60%; 
+}
+.logo .img2{
+    height: 40%;
+}
+.logo .img2{
+    font-size:0.8em;
+}
+.logo .img2:hover a{
+    border-bottom: 1px solid #ffe500;
+}
+.logo .img2 a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+.logo .img2 a span{
+    color: #ffe500;
+}
+
+.searchbar{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+.searchbar .search{
+    height: 100%;
+    width: 100%;
+    padding-left: 0.5em;
+}
+.searchbar .search input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 1em;
+    border-radius: 2px;
+}
+.searchbar .search_icon
+{
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translate(-3%,-50%);
+    font-size: 1.3rem;
+    color: #2874f0;
+    cursor: pointer;
+}
+.submenu{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    margin-left:2em;
+    justify-content: flex-end;
+}
+.login,.more,.cart
+{
+    display: flex;
+    width: 33.33%;
+    justify-content: center;
+    align-items: center;
+}
+.login_btn{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #2874f0;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.more button,
+.cart button{
+    height: 80%;
+    width: 80%;
+    background:none;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+header{
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+    position: relative;
+    margin-top: 3em;
+}
+.header_section{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header_section .card
+{
+    height: 80%;
+    width:auto;
+    text-align: center;
+    cursor: pointer;
+}
+.card:hover .text p{
+    color: #2874f0;
+}
+.header_section .card .img{
+    height: 80%;
+    width: 100%; 
+}
+.header_section .card .text{
+    height: 20%;
+    width: 100%;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+.section_offer{
+    height: auto;
+    width: 100%;
+}
+.section_offer .card{
+    height: 360px;
+    width: 90%;
+    margin: 1.3em auto;
+    display: flex;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%)
+}
+.card .subcard
+{
+    height: 100%;
+    width: 80%;
+    
+}
+.card .adcard{
+    height: 100%;
+    width: 20%;
+    padding: 0.2em;
+    cursor: pointer;
+}
+.subcard .subcardheader{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%)
+}
+.subcardheader .heading ,
+.subcardheader .time{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.subcardheader .time{
+    color: rgba(0, 0, 0, 0.699);
+}
+.subcardheader .viewallbtn{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 3%;
+}
+.viewallbtn button{
+    background-color: #2874f0;
+    border: none;
+    outline: none;
+    height: 60%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.subcard .product{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.product .next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-0%,-50%);
+    box-shadow: 0 0 1px black;
+    border-radius: 2px;
+    z-index: 999;
+    
+}
+.next button{
+    height: 80px;
+    width: 40px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+.product .productcard
+{
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.productcard .prodcutimg
+{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productcard:hover .prodcutimg{
+    transform: scale(1.1);
+}
+.bookcard{
+    width: 100% !important;
+}
+
+.productcard .producttext{
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+.producttext p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0.3em 0;
+}
+.producttext .productName{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.producttext .productAd{
+    font-size: 0.9rem;
+    color: #388e3c;
+}
+.producttext .productSubAd{
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+.heading-subcard{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    justify-content: center;
+}
+.main_heading{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.sub_heading{
+    font-size: 0.9rem;
+    color: gray;
+}
