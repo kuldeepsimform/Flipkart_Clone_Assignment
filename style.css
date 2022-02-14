@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #f1f3f6;
+
+body {
+    background-color: white;
 }
 
 .navbar {
@@ -18,49 +19,59 @@ body{
     top: 0;
     z-index: 9999;
 }
-.container{
+
+.container {
     width: 75%;
     height: 80%;
     display: flex;
     padding: 0.1em 0em;
 }
-.logo{
+
+.logo {
     height: 100%;
     width: 10%;
 }
-.logo .img1{
-   height: 60%; 
+
+.logo .img1 {
+    height: 60%;
 }
-.logo .img2{
+
+.logo .img2 {
     height: 40%;
 }
-.logo .img2{
-    font-size:0.8em;
+
+.logo .img2 {
+    font-size: 0.8em;
 }
-.logo .img2:hover a{
+
+.logo .img2:hover a {
     border-bottom: 1px solid #ffe500;
 }
-.logo .img2 a{
+
+.logo .img2 a {
     color: white;
     text-decoration: none;
     font-style: italic;
 }
-.logo .img2 a span{
+
+.logo .img2 a span {
     color: #ffe500;
 }
 
-.searchbar{
+.searchbar {
     height: 100%;
     width: 50%;
     display: flex;
     position: relative;
 }
-.searchbar .search{
+
+.searchbar .search {
     height: 100%;
     width: 100%;
     padding-left: 0.5em;
 }
-.searchbar .search input{
+
+.searchbar .search input {
     height: 100%;
     width: 100%;
     border: none;
@@ -68,31 +79,35 @@ body{
     padding-left: 1em;
     border-radius: 2px;
 }
-.searchbar .search_icon
-{
+
+.searchbar .search_icon {
     position: absolute;
     right: 3%;
     top: 50%;
-    transform: translate(-3%,-50%);
+    transform: translate(-3%, -50%);
     font-size: 1.3rem;
     color: #2874f0;
     cursor: pointer;
 }
-.submenu{
+
+.submenu {
     height: 100%;
     width: 35%;
     display: flex;
-    margin-left:2em;
+    margin-left: 2em;
     justify-content: flex-end;
 }
-.login,.more,.cart
-{
+
+.login,
+.more,
+.cart {
     display: flex;
     width: 33.33%;
     justify-content: center;
     align-items: center;
 }
-.login_btn{
+
+.login_btn {
     height: 80%;
     width: 80%;
     background-color: white;
@@ -104,11 +119,12 @@ body{
     font-size: 1rem;
     cursor: pointer;
 }
+
 .more button,
-.cart button{
+.cart button {
     height: 80%;
     width: 80%;
-    background:none;
+    background: none;
     border: none;
     outline: none;
     color: white;
@@ -116,75 +132,83 @@ body{
     font-size: 1rem;
     cursor: pointer;
 }
-header{
+
+header {
     height: 100px;
     width: 100%;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
     position: relative;
     margin-top: 3em;
 }
-.header_section{
+
+.header_section {
     width: 90%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
-.header_section .card
-{
+
+.header_section .card {
     height: 80%;
-    width:auto;
+    width: auto;
     text-align: center;
     cursor: pointer;
 }
-.card:hover .text p{
+
+.card:hover .text p {
     color: #2874f0;
 }
-.header_section .card .img{
+
+.header_section .card .img {
     height: 80%;
-    width: 100%; 
+    width: 100%;
 }
-.header_section .card .text{
+
+.header_section .card .text {
     height: 20%;
     width: 100%;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.8);
 }
-.section_offer{
+
+.section_offer {
     height: auto;
     width: 100%;
 }
-.section_offer .card{
+
+.section_offer .card {
     height: 360px;
     width: 90%;
     margin: 1.3em auto;
     display: flex;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%)
 }
-.card .subcard
-{
+
+.card .subcard {
     height: 100%;
     width: 80%;
-    
 }
-.card .adcard{
+
+.card .adcard {
     height: 100%;
     width: 20%;
     padding: 0.2em;
     cursor: pointer;
 }
-.subcard .subcardheader{
+
+.subcard .subcardheader {
     height: 20%;
     width: 100%;
     display: flex;
     position: relative;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%)
 }
-.subcardheader .heading ,
-.subcardheader .time{
+
+.subcardheader .heading,
+.subcardheader .time {
     width: 20%;
     height: 100%;
     display: flex;
@@ -193,10 +217,12 @@ header{
     font-weight: bold;
     font-size: 1.3rem;
 }
-.subcardheader .time{
+
+.subcardheader .time {
     color: rgba(0, 0, 0, 0.699);
 }
-.subcardheader .viewallbtn{
+
+.subcardheader .viewallbtn {
     width: 10%;
     height: 100%;
     display: flex;
@@ -205,7 +231,8 @@ header{
     position: absolute;
     right: 3%;
 }
-.viewallbtn button{
+
+.viewallbtn button {
     background-color: #2874f0;
     border: none;
     outline: none;
@@ -215,92 +242,101 @@ header{
     font-weight: bold;
     cursor: pointer;
 }
-.subcard .product{
+
+.subcard .product {
     height: 80%;
     width: 100%;
     display: flex;
     position: relative;
 }
-.product .next{
+
+.product .next {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translate(-0%,-50%);
+    transform: translate(-0%, -50%);
     box-shadow: 0 0 1px black;
     border-radius: 2px;
     z-index: 999;
-    
 }
-.next button{
+
+.next button {
     height: 80px;
     width: 40px;
     border-radius: 2px;
     border: 0;
     font-size: 2rem;
     cursor: pointer;
-    
 }
-.product .productcard
-{
+
+.product .productcard {
     width: 20%;
     height: 100%;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
-.productcard .prodcutimg
-{
+
+.productcard .prodcutimg {
     height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.productcard:hover .prodcutimg{
+
+.productcard:hover .prodcutimg {
     transform: scale(1.1);
 }
-.bookcard{
+
+.bookcard {
     width: 100% !important;
 }
 
-.productcard .producttext{
+.productcard .producttext {
     height: 30%;
     width: 100%;
     text-align: center;
     padding: 1em;
 }
-.producttext p{
+
+.producttext p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 0.3em 0;
 }
-.producttext .productName{
+
+.producttext .productName {
     font-weight: 600;
     font-size: 1.1rem;
 }
-.producttext .productAd{
+
+.producttext .productAd {
     font-size: 0.9rem;
     color: #388e3c;
 }
-.producttext .productSubAd{
+
+.producttext .productSubAd {
     font-size: 0.9rem;
     opacity: 0.6;
 }
-.heading-subcard{
+
+.heading-subcard {
     width: 30%;
     display: flex;
     flex-direction: column;
     margin-left: 1em;
     justify-content: center;
 }
-.main_heading{
+
+.main_heading {
     font-weight: bold;
     font-size: 1.1rem;
 }
-.sub_heading{
+
+.sub_heading {
     font-size: 0.9rem;
     color: gray;
 }
