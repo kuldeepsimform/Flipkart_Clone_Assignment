@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body class="theme_white">
+    <div class="container">
+        <div class="dark" id="theme">
+            <button id="theme_text">Dark</button>
+        </div>
+        <div class="display">
+            <input type="text" name="" id="screen" placeholder="0" readonly />
+        </div>
+        <div class="btns">
+            <div class="row row_theme">
+                <button onclick="mr();" class="mbtn">MR</button>
+                <button onclick="mc();" class="mbtn">MC</button>
+                <button onclick="mplus();" class="mbtn">M+</button>
+                <button onclick="mminus();" class="mbtn">M-</button>
+            </div>
+            <div class="row row_theme">
+                <button id="ce" onclick="backspace();">CE</button>
+                <button onclick="fact();">x!</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button class="btn">%</button>
+                <button id="ac" onclick="screen.value = ''">AC</button>
+            </div>
+            <div class="row row_theme">
+                <button onclick="sin();">sin</button>
+                <button onclick="pi();">&pi;</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">/</button>
+            </div>
+            <div class="row row_theme">
+                <button onclick="cos();">cos</button>
+                <button onclick="log();">log</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">*</button>
+            </div>
+            <div class="row row_theme">
+                <button onclick="tan();">tan</button>
+                <button onclick="sqrt();">&radic;</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">-</button>
+            </div>
+            <div class="row row_theme">
+                <button onclick="e();">e</button>
+                <button onclick="pow();">x<sup>2</sup></button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button id="eval" onclick="calculate();">=</button>
+                <button class="btn">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
