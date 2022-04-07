@@ -38,7 +38,7 @@ Write a query to fetch the department-wise count of employees sorted by departme
 Query – 8
 Write a query to retrieve duplicate records from a table.
 
-	Query - select empid,empfname,department,project,address,dob,gender,count(*) from EmployeeInfo group by 					 empid,empfname,department,project,address,dob,gender having count(*) > 1; 
+	Query - select empid,empfname,department,project,address,dob,gender,count(*) from EmployeeInfo group by empid,empfname,department,project,address,dob,gender having count(*) > 1; 
 
 Query – 9
 Write a query to retrieve Departments who have less than 2 employees working in it.
